@@ -1,0 +1,310 @@
+[
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_tic_icon.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-mdpi\\tic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_tic_icon_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-hdpi\\tic_icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_button_shape.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\button_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-anydpi-v26_tic_icon.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-anydpi-v26\\tic_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_t1.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\t1.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_tic_icon_foreground.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-hdpi\\tic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\anim_middle_animation.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\anim\\middle_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_popup.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_i2.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\i2.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_tic_icon_foreground.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-mdpi\\tic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_t4.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\t4.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_pvpblue.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\pvpblue.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_tic_icon_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-mdpi\\tic_icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_arbutus.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\arbutus.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_tic_icon_round.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-mdpi\\tic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_o8.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\o8.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-anydpi-v26_tic_icon_round.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-anydpi-v26\\tic_icon_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_tic_icon_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xhdpi\\tic_icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_game_bar.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\game_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_tic_icon_round.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxxhdpi\\tic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_t7.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\t7.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\anim_slide_bottom.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\anim\\slide_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_baronly.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\baronly.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_picsart_22_10_24_09_02_37_990.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\picsart_22_10_24_09_02_37_990.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_a5.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\a5.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_tic_icon_round.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-hdpi\\tic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_msbar.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\msbar.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_baloo_chettan.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\baloo_chettan.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_hammersmith_one.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\hammersmith_one.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_overview_layout.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\overview_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_tic_icon_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxhdpi\\tic_icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_tic_icon_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxxhdpi\\tic_icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_activity_welcome_screen.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\activity_welcome_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_tic_icon.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxxhdpi\\tic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_tic_icon_foreground.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xhdpi\\tic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_baloo.ttf.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\baloo.ttf"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_c6.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\c6.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-hdpi_tic_icon.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-hdpi\\tic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_e9.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\e9.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\anim_bottom_animation.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\anim\\bottom_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_tic_icon_foreground.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxhdpi\\tic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_pvc.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\pvc.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\anim_slide_top.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\anim\\slide_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_tic_icon_round.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xhdpi\\tic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_c3.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\c3.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\anim_top_animation.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\anim\\top_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_background.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_pvcblue.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\pvcblue.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_acme.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\acme.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\layout_activity_game_layout.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\layout\\activity_game_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_tic_icon.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxhdpi\\tic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xhdpi_tic_icon.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xhdpi\\tic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_baloo_thambi.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\baloo_thambi.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_barlogo.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\barlogo.png"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\drawable_layout_bg.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\drawable\\layout_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_amaranth_bold.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\amaranth_bold.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxhdpi_tic_icon_round.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxhdpi\\tic_icon_round.png"
+    },
+    {
+        "merged": "com.example.tictactoe.app-merged_res-25:/layout_popup.xml.flat",
+        "source": "com.example.tictactoe.app-main-27:/layout/popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\font_candal.xml.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-main-27:\\font\\candal.xml"
+    },
+    {
+        "merged": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-merged_res-25:\\mipmap-xxxhdpi_tic_icon_foreground.png.flat",
+        "source": "C:\\Users\\kusha\\.gradle\\daemon\\7.4\\com.example.tictactoe.app-debug-26:\\mipmap-xxxhdpi\\tic_icon_foreground.png"
+    }
+]

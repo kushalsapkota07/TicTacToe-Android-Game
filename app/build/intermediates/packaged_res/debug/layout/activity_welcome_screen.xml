@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomeScreen"
+    android:background="@drawable/background"
+    android:padding="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:padding="20dp"
+    >
+
+   <TextView
+       android:id="@+id/selectGameMOde"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:fontFamily="@font/baloo_thambi"
+       android:text="Select Game Mode"
+       android:textSize="25sp"
+       android:textColor="#457C73"/>
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/cpvc"
+      app:cardCornerRadius="8dp"
+       app:cardBackgroundColor="#dfeff1"
+       app:cardElevation="12dp"
+       app:strokeColor="#E15A7E8E"
+       app:strokeWidth="4dp"
+       android:layout_margin="25dp"
+       android:onClick="modeClicked"
+       >
+
+      <TextView
+          android:id="@+id/pvc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:fontFamily="@font/acme"
+          android:text="player  v/s  computer"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:layout_marginTop="4dp"/>
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/pvcblue"
+          android:layout_marginTop="20dp"
+          android:padding="10dp"
+         />
+   </com.google.android.material.card.MaterialCardView>
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/cpvp"
+       app:cardCornerRadius="8dp"
+       app:cardBackgroundColor="#dfeff1"
+       app:cardElevation="12dp"
+       app:strokeColor="#E15A7E8E"
+       app:strokeWidth="4dp"
+       android:layout_margin="25dp"
+       android:onClick="modeClicked"
+       >
+      <TextView
+          android:id="@+id/pvp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:fontFamily="@font/acme"
+          android:text="player  v/s  player"
+          android:layout_marginTop="4dp"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/pvpblue"
+          android:padding="10dp"
+          android:layout_marginTop="20dp"
+          />
+   </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+</RelativeLayout>
