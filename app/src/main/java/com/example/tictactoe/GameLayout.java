@@ -3,6 +3,7 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -12,10 +13,12 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,18 +30,27 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameLayout extends AppCompatActivity {
-    private int turn, player1, player2,xPoint,oPoint,drawPoints;
-    private String[] nac;
-    private String p1, p2, row1, row2, row3, col1, col2, col3, side1, side2, randomNac, p1NacData, p2NacData,xPts,oPts;
-    private TextView r0c0, r0c1, r0c2, r1c0, r1c1, r1c2, r2c0, r2c1, r2c2, p1Turn, p2Turn,xCounter,oCounter,drawCounter,whoWon,goMenu,round;
-    private Handler ticHandler = new Handler();
-    private boolean check,xWon,oWon,dRaw;
-    private MaterialButton goContinue;
-    private AlertDialog.Builder popupBuilder;
-    private AlertDialog dialog;
-    private LinearProgressIndicator goContinueProgressBar;
-    private int rounds=1;
-    private int p1Pts,p2Pts;
+    protected int turn, player1, player2,xPoint,oPoint,drawPoints;
+    protected String[] nac;
+    protected String p1, p2, row1, row2, row3, col1, col2, col3, side1, side2, randomNac, p1NacData, p2NacData,xPts,oPts;
+    protected TextView r0c0, r0c1, r0c2, r1c0, r1c1, r1c2, r2c0, r2c1, r2c2, p1Turn, p2Turn,xCounter,oCounter,drawCounter,whoWon,goMenu,round;
+    protected Handler ticHandler = new Handler();
+    protected boolean check,xWon,oWon,dRaw,anyoneWon;
+    protected MaterialButton goContinue;
+    protected AlertDialog.Builder popupBuilder;
+    protected AlertDialog dialog;
+    protected LinearProgressIndicator goContinueProgressBar,row2Line;
+    protected ProgressBar rowLine,col2Line, sideLine;
+    protected int rounds=1;
+    protected int p1Pts,p2Pts;
+
+
+
+    private RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+    private RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+    private RelativeLayout.LayoutParams params3 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+    private RelativeLayout.LayoutParams params4 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+
 // nac = noughts(O) and Crosses(X).
 
     @Override
@@ -60,6 +72,8 @@ public class GameLayout extends AppCompatActivity {
         }
         setContentView(R.layout.activity_game_layout);
 
+
+
         r0c0 = findViewById(R.id.r0c0);
         r0c1 = findViewById(R.id.r0c1);
         r0c2 = findViewById(R.id.r0c2);
@@ -75,20 +89,23 @@ public class GameLayout extends AppCompatActivity {
         oCounter=findViewById(R.id.oCounter);
         drawCounter=findViewById(R.id.drawCounter);
         round= findViewById(R.id.round);
+        row2Line = findViewById(R.id.row2Line);
+        rowLine = findViewById(R.id.rowLine);
+        col2Line=findViewById(R.id.col2Line);
+        sideLine=findViewById(R.id.sideLine);
 
 
 
         p1NacData = p1Turn.getText().toString();
         p2NacData = p2Turn.getText().toString();
 
+        xCounter.setText(String.valueOf(p1Pts));
+        oCounter.setText(String.valueOf(p2Pts));
+        drawCounter.setText(String.valueOf(drawPoints));
+
+
        ticHandler.post(nacs);
-        if (turn == 0) {
-            p1Turn.setTextColor(Color.parseColor("black"));
-            p2Turn.setTextColor(Color.parseColor("grey"));
-        } else if (turn == 1) {
-            p2Turn.setTextColor(Color.parseColor("black"));
-            p1Turn.setTextColor(Color.parseColor("grey"));
-        }
+
 
         System.out.println(rounds);
     }
@@ -106,6 +123,8 @@ public class GameLayout extends AppCompatActivity {
                 player2 = random.nextInt(x);
                 if (player1 > player2) {
                     turn = 0;
+                    p1Turn.setTextColor(Color.parseColor("black"));
+                    p2Turn.setTextColor(Color.parseColor("grey"));
                     Toast.makeText(GameLayout.this, "Player 1 Goes With " + randomNac, Toast.LENGTH_SHORT).show();
                     if (randomNac.equals("X")) {
                         p1 = "X";
@@ -124,6 +143,8 @@ public class GameLayout extends AppCompatActivity {
                 }
                 if (player2 > player1) {
                     turn = 1;
+                    p1Turn.setTextColor(Color.parseColor("grey"));
+                    p2Turn.setTextColor(Color.parseColor("black"));
                     Toast.makeText(GameLayout.this, "Player 2 Goes With " + randomNac, Toast.LENGTH_SHORT).show();
                     if (randomNac.equals("O")) {
                         p1 = "X";
@@ -159,6 +180,9 @@ public class GameLayout extends AppCompatActivity {
                     r0c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -168,6 +192,9 @@ public class GameLayout extends AppCompatActivity {
                     r0c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -178,6 +205,9 @@ public class GameLayout extends AppCompatActivity {
                     r0c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -187,6 +217,9 @@ public class GameLayout extends AppCompatActivity {
                     r0c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -197,6 +230,9 @@ public class GameLayout extends AppCompatActivity {
                     r0c2.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -216,6 +252,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -225,6 +264,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -235,6 +277,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -244,6 +289,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -254,6 +302,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c2.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -263,6 +314,9 @@ public class GameLayout extends AppCompatActivity {
                     r1c2.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -273,6 +327,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -282,6 +339,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c0.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -292,6 +352,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -301,6 +364,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c1.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -311,6 +377,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c2.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 1;
                     break;
@@ -320,6 +389,9 @@ public class GameLayout extends AppCompatActivity {
                     r2c2.setClickable(false);
                     winPattern();
                     winCondition();
+                    if(anyoneWon){
+                        switchoffTouch();
+                    }
                     setColor();
                     turn = 0;
                     break;
@@ -327,7 +399,6 @@ public class GameLayout extends AppCompatActivity {
         }
 
     }
-
     public void setColor() {
         if (turn == 0) {
             p1Turn.setTextColor(Color.parseColor("grey"));
@@ -337,7 +408,6 @@ public class GameLayout extends AppCompatActivity {
             p1Turn.setTextColor(Color.parseColor("black"));
         }
     }
-
     public void winPattern() {
         row1 = r0c0.getText().toString() + r0c1.getText().toString() + r0c2.getText().toString();
         row2 = r1c0.getText().toString() + r1c1.getText().toString() + r1c2.getText().toString();
@@ -373,7 +443,6 @@ public class GameLayout extends AppCompatActivity {
         r2c2.setText("");
         r2c2.setClickable(true);
     }
-
     public void switchoffTouch() {
         r0c0.setClickable(false);
         r0c1.setClickable(false);
@@ -398,8 +467,8 @@ public class GameLayout extends AppCompatActivity {
 //    }
 
     public void winCondition() {
-
         ArrayList<String> combos = new ArrayList<>(8);
+
         combos.add(row1);
         combos.add(row2);
         combos.add(row3);
@@ -411,29 +480,71 @@ public class GameLayout extends AppCompatActivity {
 boolean x = false;
 boolean o = false;
 boolean draw = false;
-        int drawLength = (row1+row2+row3).length();
+
+        int drawLength;
+        drawLength = r0c0.length()+r0c1.length()+r0c2.length()+r1c0.length()+r1c1.length()+r1c2.length()+r2c0.length()+r2c1.length()+r2c2.length();
         for (String combo:combos){
             if(combo.equals("XXX")){
                  x=true;
                  break;
             }
+
+//            if((side1.equals("XXX")||(side1.equals("OOO")))) {
+//                if(drawLength==9) {
+//                    draw = true;
+//                    break;
+//                }
+//            }
+//            if((!combo.equals("XXX")||(!combo.equals("OOO")))) {
+//                if(drawLength==9) {
+//                    draw = true;
+//                    break;
+//                }
+//            }
             if(combo.equals("OOO")){
                  o=true;
                  break;
             }
-            if((drawLength==9)&&((!combo.equals("XXX")||(!combo.equals("OOO"))))){
-                 draw=true;
-                 break;
-            }
+
         }
+        if((!combos.contains("XXX")&&!combos.contains("OOO"))&&drawLength==9){
+            draw=true;
+        }
+        if(row1.equals("XXX")||row1.equals("OOO")){
+
+            rowWinLine(10,-35,90,200,0,320);
+        }
+        if(row2.equals("XXX")||row2.equals("OOO")){
+            rowWinLine(10,70,90,200,0,320);
+        }
+        if(row3.equals("XXX")||row3.equals("OOO")){
+
+            rowWinLine(10,180,90,200,0,320);
+        }
+        if(col2.equals("XXX")||col2.equals("OOO")){
+            colWinLine(10,80,180,200,0,320);
+        }
+        if(col1.equals("XXX")||col1.equals("OOO")){
+            colWinLine(10,80,180,85,0,320);
+        }
+        if(col3.equals("XXX")||col3.equals("OOO")){
+            colWinLine(10,80,180,318,0,320);
+        }
+        if(side1.equals("XXX")||side1.equals("OOO")){
+            sideWinLine(10,28,135,200,0,400);
+        }
+        if(side2.equals("XXX")||side2.equals("OOO")){
+            sideWinLine(10,35,45,200,0,400);
+        }
+
 if(x){
     xWon=true;
-    switchoffTouch();
+    
     xPoint+=1;
     xPts= String.valueOf(xPoint);
 //    xCounter.setText(xPts);
 //    Toast.makeText(this, "Game Finished, X Won", Toast.LENGTH_SHORT).show();
-    ticHandler.postDelayed(ticable,200);
+    ticHandler.postDelayed(ticable,400);
     rounds++;
 }
 
@@ -454,12 +565,12 @@ if(x){
 //        }
 if(o){
     oWon=true;
-    switchoffTouch();
+
     oPoint+=1;
     oPts= String.valueOf(oPoint);
 //    oCounter.setText(oPts);
 //    Toast.makeText(this, "Game Finished, O Won", Toast.LENGTH_SHORT).show();
-    ticHandler.postDelayed(ticable,200);
+    ticHandler.postDelayed(ticable,400);
     rounds++;
 }
 //        if ((r0c0.getText().toString().length() + r0c1.getText().toString().length() + r0c2.getText().toString().length() + r1c0.getText().toString().length() + r1c1.getText().toString().length() + r1c2.getText().toString().length() + r2c0.getText().toString().length() + r2c1.getText().toString().length() + r2c2.getText().toString().length()) == 9) {
@@ -497,7 +608,7 @@ if(draw){
     String drawPts = String.valueOf(drawPoints);
     drawCounter.setText(drawPts);
 //    Toast.makeText(this, "Game Finished,Draw", Toast.LENGTH_SHORT).show();
-    ticHandler.postDelayed(ticable,200);
+    ticHandler.postDelayed(ticable,400);
     rounds++;
 }
         if(x &&p1.equals("X")){
@@ -516,6 +627,10 @@ if(draw){
         if(o &&p2.equals("O")){
             p2Pts++;
             oCounter.setText(String.valueOf(p2Pts));
+        }
+
+        if(x||o||draw){
+            anyoneWon=true;
         }
     }
 
@@ -564,6 +679,8 @@ if(draw){
                 afterDraw();
                 round.setText("Round - "+rounds);
                 dialog.hide();
+                afterDraw();
+                anyoneWon=false;
 
             }
         });
@@ -576,7 +693,7 @@ if(draw){
                     public void run() {
                         Intent intent = new Intent(GameLayout.this,welcomeScreen.class);
                         startActivity(intent);
-                        overridePendingTransition(R.anim.slide_top,R.anim.slide_bottom);
+//                        overridePendingTransition(R.anim.slide_top,R.anim.slide_bottom);
                         finish();
                     }
                 });
@@ -596,11 +713,11 @@ if(draw){
             dRaw=false;
         }
         if(rounds==6){
-            if(xPoint>oPoint){
+            if(p1Pts>p2Pts){
                 whoWon.setTextSize(52);
                 whoWon.setText("Player 1 Won");
             }
-            if(oPoint>xPoint){
+            if(p2Pts>p1Pts){
                 whoWon.setTextSize(52);
                 whoWon.setText("Player 2 Won");
             }
@@ -623,6 +740,11 @@ if(draw){
                     afterDraw();
                     dialog.hide();
                     ticHandler.post(nacs);
+                    anyoneWon=false;
+                    rowLine.setVisibility(View.INVISIBLE);
+                    row2Line.setVisibility(View.INVISIBLE);
+                    col2Line.setVisibility(View.GONE);
+                    sideLine.setVisibility(View.GONE);
                 }
             });
         }
@@ -655,5 +777,123 @@ if(draw){
        Window window = dialog.getWindow();
        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
+    public void rowWinLine(int width, int topMargin,int rotateDegree,int leftMargin,int rightMargin,int height){
+        col2Line.setVisibility(View.VISIBLE);
+        final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
+        int topMar =  (int)(topMargin * scale + 0.5f);
+        int leftMar =  (int)(leftMargin * scale + 0.5f);
+        int rightMar =  (int)(rightMargin * scale + 0.5f);
+        int ht =  (int)(height * scale + 0.5f);
+
+        params4.width = (int)(width * scale + 0.5f);
+        params4.height=ht;
+        params4.setMargins(leftMar, topMar,rightMar,0);
+
+        col2Line.setLayoutParams(params4);
+        col2Line.setRotation(rotateDegree);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int progressStatus=0;
+                while(progressStatus<160) {
+                    progressStatus++;
+                    int finalProgressStatus = progressStatus;
+                    ticHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            col2Line.setProgress(finalProgressStatus);
+
+
+                        }
+                    });
+                    try{
+                        Thread.sleep(5);
+                    }catch (Exception e){}
+                }
+
+            }
+
+        }).start();
+    }
+    public void colWinLine(int width, int topMargin,int rotateDegree,int leftMargin,int rightMargin,int height){
+        col2Line.setVisibility(View.VISIBLE);
+        final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
+        int topMar =  (int)(topMargin * scale + 0.5f);
+        int leftMar =  (int)(leftMargin * scale + 0.5f);
+        int rightMar =  (int)(rightMargin * scale + 0.5f);
+        int ht =  (int)(height * scale + 0.5f);
+
+        params4.width = (int)(width * scale + 0.5f);
+        params4.height=ht;
+        params4.setMargins(leftMar, topMar,rightMar,0);
+
+        col2Line.setLayoutParams(params4);
+        col2Line.setRotation(rotateDegree);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int progressStatus=0;
+                while(progressStatus<160) {
+                    progressStatus++;
+                    int finalProgressStatus = progressStatus;
+                    ticHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            col2Line.setProgress(finalProgressStatus);
+
+
+                        }
+                    });
+                    try{
+                        Thread.sleep(5);
+                    }catch (Exception e){}
+                }
+
+            }
+
+        }).start();
+    }
+    public void sideWinLine(int width, int topMargin,int rotateDegree,int leftMargin,int rightMargin,int height){
+        sideLine.setVisibility(View.VISIBLE);
+        final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
+        int topMar =  (int)(topMargin * scale + 0.5f);
+        int leftMar =  (int)(leftMargin * scale + 0.5f);
+        int rightMar =  (int)(rightMargin * scale + 0.5f);
+        int ht =  (int)(height * scale + 0.5f);
+
+        params3.width = (int)(width * scale + 0.5f);
+        params3.height=ht;
+        params3.setMargins(leftMar, topMar,rightMar,0);
+
+        sideLine.setLayoutParams(params3);
+        sideLine.setRotation(rotateDegree);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int progressStatus=0;
+                while(progressStatus<200) {
+                    progressStatus++;
+                    int finalProgressStatus = progressStatus;
+                    ticHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            sideLine.setProgress(finalProgressStatus);
+
+
+                        }
+                    });
+                    try{
+                        Thread.sleep(5);
+                    }catch (Exception e){}
+                }
+
+            }
+
+        }).start();
+    }
+
 
 }

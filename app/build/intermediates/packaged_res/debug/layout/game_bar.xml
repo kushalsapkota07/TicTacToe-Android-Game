@@ -2,12 +2,67 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/game_bar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#6c9fba">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:src="@drawable/picsart_22_10_24_09_02_37_990"
-
         />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+    android:id="@+id/row2Line"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="185dp"
+    android:progress="1"
+    android:max="50"
+    android:padding="35dp"
+    app:trackThickness="10dp"
+    app:trackCornerRadius="8dp"
+    app:trackColor="#00000000"
+    app:indicatorColor="@color/black"
+    android:layoutDirection="rtl"
+    android:visibility="gone"
+    />
+    <ProgressBar
+
+        android:id="@+id/rowLine"
+        android:background="#00FFFFFF"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="10dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:max="160"
+       />
+
+    <ProgressBar
+
+        android:id="@+id/col2Line"
+        android:background="#00FFFFFF"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="10dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:max="160"
+        android:visibility="gone"/>
+    <ProgressBar
+
+        android:id="@+id/sideLine"
+        android:background="#00FFFFFF"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="10dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:max="200"
+        android:visibility="gone"/>
+
 </RelativeLayout>

@@ -32,6 +32,7 @@ drawable layout_bg
 drawable msbar
 drawable o8
 drawable picsart_22_10_24_09_02_37_990
+drawable progress_drawable_vertical
 drawable pvc
 drawable pvcblue
 drawable pvpblue
@@ -51,11 +52,13 @@ id a5
 id barLogo
 id c3
 id c6
+id col2Line
 id cpvc
 id cpvp
 id drawCounter
 id e9
 id gameBar
+id game_bar
 id goContinue
 id goContinueProgressBar
 id goMenu
@@ -78,7 +81,10 @@ id r2c0
 id r2c1
 id r2c2
 id round
+id row2Line
+id rowLine
 id selectGameMOde
+id sideLine
 id t1
 id t4
 id t7
@@ -99,5 +105,8 @@ mipmap tic_icon_foreground
 mipmap tic_icon_round
 string app_name
 style Theme.TicTacToe
+style Widget
+style Widget.ProgressBar
+style Widget.ProgressBar.Vertical
 xml backup_rules
 xml data_extraction_rules

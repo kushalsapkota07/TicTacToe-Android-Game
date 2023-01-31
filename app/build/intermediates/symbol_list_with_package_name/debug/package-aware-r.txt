@@ -2525,6 +2525,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable o8
 drawable picsart_22_10_24_09_02_37_990
+drawable progress_drawable_vertical
 drawable pvc
 drawable pvcblue
 drawable pvpblue
@@ -2671,6 +2672,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id col2Line
 id collapseActionView
 id compress
 id confirm_button
@@ -2746,6 +2748,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id gameBar
+id game_bar
 id ghost_view
 id ghost_view_holder
 id goContinue
@@ -2917,6 +2920,8 @@ id right_icon
 id right_side
 id round
 id rounded
+id row2Line
+id rowLine
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
@@ -2948,6 +2953,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sideLine
 id sin
 id skipCollapsed
 id skipped
@@ -4049,6 +4055,7 @@ style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style Widget
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -4395,6 +4402,8 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
+style Widget_ProgressBar
+style Widget_ProgressBar_Vertical
 style Widget_Support_CoordinatorLayout
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
